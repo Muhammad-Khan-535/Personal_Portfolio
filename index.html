@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MK - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Muhammad's Portfolio</div>
+        <div class="right">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact Me</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="text-purple">Muhammad Khan</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <a href="https://github.com/Muhammad-Khan-535" target="_blank">
+              <button class="btn">Visit GitHub</button>
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="images/bg.png" alt="bg not found" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-white">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="images/html.png" alt="" />
+            <div class="vertical-title">HTML </div>
+        
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/css.png" alt="" />
+            <div class="vertical-title">CSS </div>
+            
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/javascript.png" alt="" />
+            <div class="vertical-title">JavaScript</div>
+            
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="images/React.png" alt="" />
+            <div class="vertical-title">React <div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="aboutSection" id="about">
+        <h1>About Me</h1>
+        <p>
+          I’m Muhammad Khan, a passionate web developer focused on building
+          dynamic, user-friendly websites and web applications. I love exploring
+          new tech stacks and solving real-world problems through clean,
+          scalable code.
+        </p>
+      </section>
+
+      <!-- Services Section -->
+      <section class="servicesSection" id="services">
+        <h1>My Services</h1>
+        <div class="services">
+          <div class="service-card">
+            <h3>Frontend Development</h3>
+            <p>
+              Building responsive, modern user interfaces using HTML, CSS,
+              JavaScript & React.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Backend Integration</h3>
+            <p>
+              Connecting frontend to backend using APIs and server-side logic
+              with Node.js, Flask, or Django.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>IoT & ML Projects</h3>
+            <p>
+              Working on sensor-based projects and AI systems using Python, ML
+              models, and Arduino.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projectsSection" id="projects">
+        <h1>Projects</h1>
+        <div class="projects">
+          <div class="project-card">
+            <h3>iCoder – Bootstrap Blog Template</h3>
+
+            <p>
+              A modern and responsive blog layout built using Bootstrap 5.
+              iCoder is designed for tech blogs, featuring navigation, cards,
+              responsive layout, and reusable components.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Skin Image Analytics</h3>
+            <p>
+              Skin image analysis platform powered by Gemini AI, built with
+              Streamlit. Enables fast and reliable detection of anomalies in
+              medical scans using AI models.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+              Personal developer portfolio built from scratch using HTML, CSS,
+              and JavaScript to showcase skills, projects, and contact
+              information.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contactSection" id="contact">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>
+            Muhammad's Developer <br />
+            Portfolio
+          </h3>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+        <ul>
+          <li>Privacy</li>
+          <li>Projects</li>
+          <li>GitHub</li>
+          <li>Resume</li>
+        </ul>
+      </div>
+      <div class="footer-text-center">
+        &copy; All rights reserved by Muhammad Khan.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer", "React Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
